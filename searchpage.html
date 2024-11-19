@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <div id="results"></div>
+
+    <script>
+        // Function to get query parameters from the URL
+        function getQueryParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Display search results based on the query
+        const searchTerm = getQueryParameter('query');
+        document.getElementById('results').innerText = `You searched for: ${searchTerm}`;
+
+        // Here you can implement your logic to fetch and display actual search results
+    </script>
+</body>
+</html>

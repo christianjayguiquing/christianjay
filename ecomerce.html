@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAYCAPS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+<header>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="promo-banner">
+              <span>FREE SHIPPING OVER $100 - use code FREE100</span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="promo-banner">
+              <span>20% OFF ON YOUR FIRST ORDER - use code FIRST20</span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="promo-banner">
+              <span>BUY ONE GET ONE FREE ON SELECT ITEMS!</span>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</header>
+
+
+<!-- Lower Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="caps-removebg-preview.png" alt="Logo" height="50" class="d-inline-block me-2">
+        <span style="color: black; font-size: 30px;">J</span>
+        <span style="color: black; font-size: 30px;">A</span>
+        <span style="color: black; font-size: 30px;">Y</span>
+        <span style="color: grey; font-size: 30px;">C</span>
+        <span style="color: grey; font-size: 30px;">A</span>
+        <span style="color: grey; font-size: 30px;">P</span>
+        <span style="color: grey; font-size: 30px;">S</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lowerNavbar" aria-controls="lowerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="lowerNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown hover-dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                    SHOP
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Men's Caps</a></li>
+                    <li><a class="dropdown-item" href="#">Women's Caps</a></li>
+                    <li><a class="dropdown-item" href="#">Kids' Caps</a></li>
+                    <li><a class="dropdown-item" href="#">Custom Caps</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">SALES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">TOP LIST</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">EXCLUSIVE</a>
+            </li>
+        </ul>
+        
+        <div class="icons">
+            <!-- New Search Container -->
+            <div class="search-container">
+                <form class="search-box" role="search" onsubmit="handleSearchSubmit(event)">
+                    <span>Search</span>
+                    <input class="form-control" type="search" id="searchInput" placeholder="Type to search..." aria-label="Search">
+                    <div class="shortcut">Ctrl K</div>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        
+            <div class="fas fa-shopping-cart" id="cart-btn" onclick="handleCartClick()"></div>
+            <div class="fas fa-user" id="login-btn" onclick="handleLoginClick()"></div>
+        </div>
+        
+            <div class="fas fa-shopping-cart" id="cart-btn" onclick="handleCartClick()"></div>
+            <div class="fas fa-user" id="login-btn" onclick="handleLoginClick()"></div>
+        </div>
+        
+</nav>
+
+<!-- hero -->
+<div id="Home" class="hero" style="position: relative; text-align: center; color: white;">
+    <video autoplay muted loop class="background-video">
+        <source src="These hats are 🔥🔥🔥_ a product video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <h1 class="display-4">Stylish Caps for Every Occasion</h1>
+        <p class="lead">Discover our exclusive range of caps that blend fashion with functionality.</p>
+        <a href="#" class="btn btn-dark">Shop Now</a>
+    </div>
+</div>
+
+
+<!--text inside image grid-->
+<div class="container text-center">
+    <div class="row">
+        <!-- First Image -->
+        <div class="col-md-6">
+            <div class="image-wrapper">
+                <a href="https://www.cap-z.com.au">
+                    <img src="https://www.cap-z.com.au/cdn/shop/files/BFCM24GENERALRELEASE_BANNER_49f7be6e-27a3-4973-b5d3-a7c7c0a99c60_1296x.gif?v=1731476953" 
+                         alt="Image 1" class="img-fluid">
+                </a>
+            </div>
+        </div>
+        <!-- Second Image -->
+        <div class="col-md-6">
+            <div class="image-wrapper">
+                <a href="https://www.capcity.com.au">
+                    <img src="https://www.capcity.com.au/cdn/shop/t/15/assets/custom_showcase2_img.jpg?v=64730671612835164101585109660" 
+                         alt="Image 2" class="img-fluid">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--text and first side by side-->
+
+<div class="hero d-flex align-items-center">
+    <!-- Left Side Text -->
+    <div class="hero-content">
+        <h1 style="color: rgb(230, 225, 225);">39THIRTY</h1>
+        <p>Perfect for active wear and casual, everyday comfort.</p>
+        <a href="#" class="btn btn-dark">Shop Now</a>
+    </div>
+
+    <!-- Right Side Image -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT18fyBIGSVx1Qp3GNGgeVjScQcPFzYOJP3xQ&s" alt="Winter Cap" style="width: 400px; height: auto; margin-left: 20px;">
+</div>
+
+
+<div class="container text-center">
+    <h2 class="my-4">Latest Release</h2> <!-- Section Title -->
+    <div class="row">
+        <!-- First Item -->
+        <div class="col">
+            <a href="https://example.com/cap1" class="hover-link">
+                <img src="1image.jpg" alt="Cap 1" class="img-fluid hover-image">
+            </a>
+            <div class="my-2">
+                <a href="https://example.com/cap1" class="btn btn-grey">Shop Now</a>
+            </div>
+        </div>
+        <!-- Second Item -->
+        <div class="col">
+            <a href="https://example.com/cap2" class="hover-link">
+                <img src="2image.jpg" alt="Cap 2" class="img-fluid hover-image">
+            </a>
+            <div class="my-2">
+                <a href="https://example.com/cap2" class="btn btn-grey">Shop Now</a>
+            </div>
+        </div>
+        <!-- Third Item -->
+        <div class="col">
+            <a href="https://example.com/cap3" class="hover-link">
+                <img src="3image.jpg" alt="Cap 3" class="img-fluid hover-image">
+            </a>
+            <div class="my-2">
+                <a href="https://example.com/cap3" class="btn btn-grey">Shop Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--SLIDER-->
+<div class="banner-container sticky-banner">
+    <div class="slider" style="background-image: url('https://via.placeholder.com/1920x1080/000000/FFFFFF?text=+'); background-size: cover; background-position: center;">
+        <div class="slider-content">
+            <div class="slider-item">
+                <span class="text">Limited Sale Items</span>
+                <a href="#" class="button">Shop</a>
+            </div>
+            <div class="slider-item">
+                <span class="text">New Arrivals</span>
+                <a href="#" class="button">Shop</a>
+            </div>
+            <div class="slider-item">
+                <span class="text">Exclusive Offers</span>
+                <a href="#" class="button">Shop</a>
+            </div>
+            <div class="slider-item">
+                <span class="text">Best Sellers</span>
+                <a href="#" class="button">Shop</a>
+            </div>
+        </div>
+        <!-- Duplicate the content for seamless scrolling -->
+        <div class="slider-content">
+            <div class="slider-item">
+                <span class="text">Limited Sale Items</span>
+                <a href="#" class="button">Shop</a>
+            </div>
+            <div class="slider-item">
+                <span class="text">New Arrivals</span>
+                <a href="#" class="button">Shop</a>
+            </div>
+            <div class="slider-item">
+                <span class="text">Exclusive Offers</span>
+                <a href="#" class="button">Shop</a>
+            </div>
+            <div class="slider-item">
+                <span class="text">Best Sellers</span>
+                <a href="#" class="button">Shop</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--text and iamge side by side-->
+<div class="hero">
+    <!-- Left Side Image -->
+    <img src="https://plus.unsplash.com/premium_photo-1674763147581-dad67afc9b55?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJlYW5pZSUyMGhhdHxlbnwwfHwwfHx8MA%3D%3D" alt="Winter Cap">
+
+    <!-- Right Side Text -->
+    <div class="hero-content">
+      <p>Stay Cozy with Beanie Caps</p>
+      <h1>With JayCaps</h1>
+      <p>Discover our collection of premium beanies, designed for style and warmth in every season.</p>
+      <a href="#">Explore Collection</a>
+    </div>
+  </div>
+
+<!--explore collections-->
+
+<div class="containers text-center">
+    <h1 class="black-text">Explore Our Collections</h1>
+</div>
+
+<!-- Grid Images -->
+<div class="container mt-4">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-3 mb-4">
+            <a href="page1.html" style="text-decoration: none; color: white;">
+                <div style="position: relative; overflow: hidden;">
+                    <img src="https://www.famcapstore.com/cdn/shop/files/P6211044.jpg?v=1729711315&width=550" alt="Fitteds" class="hover-img" style="width: 100%; height: 300px; object-fit: cover; transition: transform 0.3s;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.6); color: white; text-align: center; padding: 15px; font-size: 18px;">
+                        Fitteds
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-3 mb-4">
+            <a href="page2.html" style="text-decoration: none; color: white;">
+                <div style="position: relative; overflow: hidden;">
+                    <img src="https://www.famcapstore.com/cdn/shop/files/P6172683_22f52737-5b47-4d9c-8ebb-87f95e14ad83.jpg?v=1729715485&width=550" alt="Adjustable" class="hover-img" style="width: 100%; height: 300px; object-fit: cover; transition: transform 0.3s;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.6); color: white; text-align: center; padding: 15px; font-size: 18px;">
+                        Adjustable
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-3 mb-4">
+            <a href="page3.html" style="text-decoration: none; color: white;">
+                <div style="position: relative; overflow: hidden;">
+                    <img src="https://www.famcapstore.com/cdn/shop/files/PB260360.jpg?v=1729713462&width=550" alt="Apparel" class="hover-img" style="width: 100%; height: 300px; object-fit: cover; transition: transform 0.3s;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.6); color: white; text-align: center; padding: 15px; font-size: 18px;">
+                        Streetwear
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-3 mb-4">
+            <a href="page4.html" style="text-decoration: none; color: white;">
+                <div style="position: relative; overflow: hidden;">
+                    <img src="https://neweracap.ph/cdn/shop/files/ne_script_image_collection_1.jpg?v=1731044581&width=1500" alt="New Arrivals" class="hover-img" style="width: 100%; height: 300px; object-fit: cover; transition: transform 0.3s;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.6); color: white; text-align: center; padding: 15px; font-size: 18px;">
+                        New Arrivals
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="hero d-flex align-items-center">
+    <!-- Left Side Text -->
+    <div class="hero-content">
+        <h1 style="color: rgb(230, 225, 225);">Limited Editions</h1>
+        <p>Discover a wide range of stylish caps for every occasion.</p>
+        <a href="#" class="btn btn-dark">Shop Now</a>
+    </div>
+
+    <!-- Right Side Image -->
+    <img src="https://neweracap.ph/cdn/shop/files/new_era_basketball_club_categorized_slider_desktop.jpg?v=1727368162&width=1500" alt="Winter Cap" style="width: 400px; height: auto; margin-left: 20px;">
+</div>
+
+<!--brand section-->
+<section class="brands-section">
+    <h5>Buy hats & caps online at JAYCAPS - Addicted to headwear since last May 20,2023</h5>
+    <div class="brands">
+        <div class="brand">
+            <img src="https://www.kindpng.com/picc/m/563-5631961_new-era-logo-png-new-era-transparent-png.png" alt="New Era">
+        </div>
+        <div class="brand">
+            <img src="https://www.kindpng.com/picc/m/610-6102881_goorin-bros-goorin-bros-logo-png-transparent-png.png" alt="Goorin Bros.">
+        </div>
+       
+        <div class="brand">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8AAADS0tJlZWWVlZVhYWHr6+s6Ojr4+Ph0dHSOjo6dnZ37+/tERERtbW3n5+eoqKh9fX3MzMwzMzODg4PCwsIoKCi3t7dXV1fOzs5cXFze3t60tLS9vb2YmJjy8vJLS0s+Pj4SEhIfHx+IiIhPT08YGBglJSVdTfhiAAAHkklEQVR4nO2baXuiMBRGAZeKuCDu4to67f//h0NuFgIJi6iFmec9H1qhIDkQcm8u1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB2WR96eQaBs0t+zdQ2XrLNIXScY37bXew48WG2uJ/DdTxq0aKMo2viO+znl9pmzRbHjtM3tvQS/XRpN15fWlQpwGa4IMON2qauIe1137doY6P4GjYzpP29FoUM5H34yZo2oI+HoMxwmrsPLYau+xl0765csobJhUmJ4Sm3o9UwYTH8rabXhAzliS8z3OZ2LDJMHLs17LzBkPbpDrUN6/ZSzvrXBCoxDb+8iLMPdMO+XB1FMdu23NDtTVqUymAamj0uHy0o66kwdN2oRSudJoY+27bS0L23qKXxRkN32omeajG8TjnXjwLDHtu2hqHrzls0k5SNpZFu+Ei0SOlAHveWeKjRfth4t6ERR3+dtxu2rvh+w7YD45uytgzxr9nYqG3Y91L2l4cM3VYnVLUNM9jn+IV8tuPG+RVD9087csTGMHy81laDfjt2DJ+VXZThA/XS/UOGXUhuHmYymYwucXRcTWspvrkx8Xq7Xb9v0I5W1Yaz6q8pY7gbDAY7pXBhiwu5FN7kUa5Hue58GKT0VkcqHnm7QZ7D2Tkla1lfFfQP/Ehxsrrnj8M9rzutr1WKzwX+OX3HTRlqSyfr/eDnj8/OR2Rpl++E7FdaW5qJb0lHmu8VNd6r6K3PhQxuqPIOMpzSx3H+QEe7obssNUzHQtOQzsDFPJl5zi8wlLdzahiaB4rshu6dR4dmhq67GrGxuFTxmXq4NAxyhkO++uOU5E3D0zU9DWTYWxH+j1gfL2j5/k1q9HkR1jV0XXavBmWGqxcYitOkDGfZbw7VaSDDKLtehSzKc4aZP9YxdKcXe09XPFEMV4Z+xnBE67SUie7KT2mYzr9vbFHNHshQlVjqG9JljEsMn6i+keFGNUwabul79TgoV+QMFy8yZFGvTLF58Y0MQ1Ybu+qGFIg3+oakcjQMqdmq05Ya+qWG7qA0Y03DajPDWLZTGtLQkrm/6areDUM6vBrqLIb+Xpb6d+WGrNRYHDW+nKaQYeD0kp/fmuGncd480YjMSDOnWJ2mVRbDHGVziyR3uBcqNk7AheFFGElD+tKtseFOGC555ZfOg/uZ3iPPGbKb4Fai/5Qhn8lNsoaZAgsFyD+WiO9rg8CThslINiz827OG5LSqew01vvXuYzG8zSTLasOvksjftJsqQ0q8hhX34cyWtWmpv8UwzSkrxlKiLw5toenjYWXosEHj4AhDcyylYU6OpYG3T4iOPJsrNawbDwUXEYpNlk8b0qeTMKTo96FvSBEyzEeLn8zSCwz94ovYMP1ODcnqSxjy14L0aiWtMHKaA1tK+8/zhskxbQMUo+FEWDNUTzmnImroIzRXdvKGdK1L4+GjhmORE5s0nCVqhurksbkFn6+peBGLo+cNz2yp90pDV3QMk8HzhrwEyg1FFjymzj8SQ/jIMKRLe3ip4d765pzbuJiRMfRSQ97/EpaDwVJ8pOiRNYzU9i8zvBdG/RcYUnoqW/wnfwB+V2YN4+yhX2G4LBxNmxU1s4Z8gBFRIlfKDLR2KkM+Kqh0I51oKsOyWpsdWWAwaDaYXhar1SINaEdWcJGnPdaOpF4cDFkNJj2bC16SEYzZkooxEfvuNLmlPefVVf2Yj18mqmb7SvZh0uhx+I5nB7H52IZzKkprguovfT/z9fG4rv0ujFGSFSIFV/ldLy5uPrJswnT1T+bmH6kWj0WGFSxzO7MdvJ/kw60XThxrnTURKSjYNJ4iVmDvLKL2pz/dC42NKp4fHu1li1VRuPB/1VAMQt/pdrlp1bXakE1eLM+eFt0wlAuqmxpN3VUbsqzwAcMnH7OVG4aB4swGVtW75N3Pm/3D4s7lrJpPhn6g7TzMxsM0d2rbML8yfZAiVlA2IyeUfKTY1HifJrLciZ0wpFSmN2A/Pa3VKtbz3Hle/U5U3zJudsKQhs0tefBSR26eyC/psdrQZtMJQyoEjy7pnyhX1rrjcO95+xrXsKuG1IKpKN+ybsoTcDOX6fNLOZJMumt42EmujqhphuI3yzRyk6isoYbxFnR3DDUcMUkayoePjpwuVBsab7J31JCuGJUvSTWSOdz/Y0gJNmU2Z9Hs/+Aaju+SlVhDsU92U6/MsCzid8fQbOE2TOCRfS2aZL7u+o9GCyPHnplP47z++dz3/lVD89AiBUgrw/zJTqcNw97hPrIbWt57OYnaUZzdpsu9dLAdTea3kdWQ5r67c584L/jFE6/lDHWHVYdHmovvfI394dhqSMtednEinzXc9/P5Wsz/L3J+qE0ug2E3DL3Q2YwXzsFmSPM57RECzRS3lkaxgFn5nndbhnHgzNZ9Z2YzpIulFaBoIrUzy2Y07HTW0Plw5s78vLcYGrMIfgeO8qVs/iJadw3jaXjsiVp91pAuWeaROv2dbTtJfWZiVK009NuLh/G+ybty8Sk8B8d/8f8HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALrHX8uodLqLoxIOAAAAAElFTkSuQmCC" alt="The North Face">
+        </div>
+        <div class="brand">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH2OhxH_oO451_8I9S7NXqxMcP4pU0FWWX1w&s" alt="Adidas">
+        </div>
+        <div class="brand">
+            <img src="data:image/png;base64,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" alt="Adidas">
+        </div>
+        <div class="brand">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAh1BMVEX///8AAAC7u7u0tLTm5ubZ2dne3t7s7Oz09PTp6en7+/upqam1tbXNzc1ZWVmioqJRUVHBwcGKiorR0dEfHx9ycnKbm5vGxsZra2uCgoImJiYXFxc+Pj6lpaXb29udnZ1GRkZkZGR7e3uTk5MyMjI5OTmHh4cMDAxWVlYrKytMTExDQ0MVFRWbQRvCAAAIy0lEQVR4nO2dCXeiMBDHuUUFL1S0q1WkrT32+3++JQnhEki0I8m+N7/3tktFM+Of3JmkhoEgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCKIOz/KAUhrZ7gQoKXVEx82LaZoBUHJultY1OYX/qzCTeHUwcyygNF95gl/7pQ+U5mB4p2+zArgmhLc0Akp2AMK92eApmhA2S6CUn0p0afr9TE0ydprL4qQtTgNq4rUnf3GB0ofHPrS7/HRNTHM917HK9drKzGCaZCS61bhWZxYZTJMss0yBzEBw6nV1ME0yVnoUIX8lcnRATbLWeQxk63EmH2I3B9Uka5xHQNYeZCvjpGlCdSGkNDHNvcLxUHiV83FoTUzTBjJ4P7IeDq+Jqaz8vOmrCZDB+0m01WQNZPB+JGtYOE0cWYM7IIP3E2qricIerbaaOEAGH2CnqSZfQPYeQbbwDK3JEcjeQ6z11ETpvH6gpSYrIHMPIpdRBtZE8fKPXI0yrCZKaxOCVNMzqCZvQMZ+gXaaqJ9Uomu4IiDXi0WomyaoMBX7uQUytRSbugCZ+iU3S6E3QA3JxIPObyBLv0ZczwIZ+hbZeQcyBEAi8hVm8XLyH0liGBuBs3sQK6Ka6wxiBQzRIg9I11LQaU4gbEAiGPl0D0EmvuO5URSF2T/Xc0bd6ln9JtJnfK3fIZgrbUykj1zr+LH7/mp97/qc7E9B1Ox89RuIB/um95D0uVw0kp6V7mQn/NezVVBUz32BC+a7HgvFt/SWn6zf5tn794671/V6/bfj3stmmgkTCxLXFX/W43frvSQNIqesQiZZmdruXlreuOhJ+V3h9KsEsexyaZY1uuM5J2EqvZ6mdJJeEmEwChMkFcVWj6Zd5ayOygVzaSTCL2ahVEq98WCMRHFghTR+/6hwJ1/8BQE/id4VSR0/7axXFvdtSPC7hw17DWaP7sHtbIHubTY7e6/vmgcLN1j2thr3zITFbe1ygf4tDidu77FXOEq2FYEwpf9DFbc/VDZnI255XqXCB69Q8YPPw5ddVs9ksbrHKJN4L935O0DtInsSEvPVVdabY9hsPEbR9HJHJ5YAM2P1HEZ9Pc+Z4U037bNC75/J5nK5bHazQ3vu2M3d/v6xbrH2Bf2ZhL1n4k73wpnmCofLMcyLWN8oUNes0jcmNs1aneq/WvN90per3maXrRXVKhy/N/0vDTv5467ZD0bHXKnvuOEysI+nLeE0n9rL2HU66l7B6FJuDDUgovgCkIGJwMYcwgYcoticGYgV0TKgVpWKsAmGGZqMRGY2IGZAEPdKgAwJZ5m0EUWw7pKxALIk3j71AWTpl0gEhUAF3YnV12NQ2N9tgHVUJiZHh73GPxJ+Qo1dpWK31M9ZS03TDxrPpnwpXdg8Dq8JmLVH6R/kqNFE3SYvikylZw5cn6gOGu4dvyvTRGlGkfVxaE2g4nEfQWJbvhJNzkD2HkHSxcE1MdVF6EhvbR1cE3UB5tKz9INrom58LA6FUKWJuk2SZ201UdcaS3s4vCbKZvGl9+YProm6vfnG+FNLTb7ULgtGUoF4UP1KKU2uKnuxjFAitmJATf5qsffNiIQTBoNp8qZPNIoj2P42kCa6HeU37Qs8G0STVMNtCG531ObzNZmpnnDsxO6YxIeq9zo0WZ80zCIlo1NbGXqqJh+vQKk/EWd7E44Gpcnt5MSHZtVqN6PpbABNfraaRzzeEKY/T9TkZb9Uv973ENE8eYImn2msdZ0qxo+mF6g9nc5mHmsYy4cgCIIgCIIgCIIgCIIgQqzADivXseHbQRDYfHo4tAPL8K2SJZ9Jj8KC7CW38hYrvp1LJW8rNlJW07OW5GV6VW5DWZJf6RpGPC2Ic3+KFbaIXoss3w9dUsmv6YYDw2azxCf2GrkcN0LMyYl6Ue0Vv3l8ZXOXzbT4IKGxKL/iCzt8HxAL8DjfHFAWM3+4tldqqGEZYPGjU5N84rlNE7KBs7705Td3PjUPjc5ffm3VxBzxxS72lHMPFrf7qfyaJsQHt/k0AP7kSrcmptepSe6b+Yfx93rrfT0P878/eW7XJBjnF+yQnT9ckyP9/2fxnUEvp2JNAOKJ2zWhTl9rmvAQMqqPZTS+N9VkVHlHbfqd3p2TH2GhSV426R8+OhJNXrgnZFfgH6rJpZLShGyE33dokh+e4VXvQmuypA9216aJkZikXJHX7TCmTPJvzZ/QjSYkIuFAz3D+KjThdQc5UGVKNPngShE9AqoJuffJEyHB/5sOTbi1ij7gmthsl8qxTZOPQhN+8k+aa/I6InjbSpIU+vhcdoxwwDXZ+uTNDj0YMCZeXMbsc8T+u1FoUmx1S3s0call59S0DKsJK9RRiyarQpPiEIPJTX1S23b0nX+8EKtRn5ypFxsqQWoUdpkmxbb/Pk0qnIxf06kJ2wlIS3Fdk0uhiZGuKHuPaVLG59c2YdMG9TtJkk/uM80n5fkxXq4JNUmS/6R5akHL3Llqd0PbX67Jn0KT0jLEweb0y+RBQGlVE3aUxWHNNeFh/1REVsc2kxkvWl0jjzMt448nuSaVDdY+08Tgp045uSb7Sq6gFlYGKa/5WQ7UQYdq4pQ57wAgSiPrJYUmZRj1bVvs0Y8ll00O6594Ey+DBQSWbRJt2yuFa880SY1X8m56zL81Zprk5SC/WuQ9vQOFXto3+yLYZ16ZZaopwPp7Y0OKW2pSFHtWdipxslm/qH5ETMg8YynSnFS2O+S3rMB4rut61Ng414RBHvwx1yR/DD7X5GYnr98MZdoyTfJu85gl/3tqUfVLJlLeUK4rmszKfjY5x6cuZehXPPNqmrACySG9kU/aqPEzDoiNOfmmOy4guUO+6c/Njm9Sc9dOp1nlZcqtPA2Q42kmsc0I6FjBz654/rPo6/4o+xEb+buWzGg0LzlN6E1eXsh1kfopu12OQbzs1zQbyNk2d51dZz9ot9nlyWSWyaeccgg45R+JgtwTFqbSaRlBEARBEARBEARBEARBEARBEARBEARBEORe/gEJqG8pidrTnQAAAABJRU5ErkJggg==" alt="Adidas">
+        </div>
+     
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white pt-4 pb-4"> 
+    <div class="container"> 
+        <div class="row"> 
+            <div class="col-md-3"> 
+                <h5>Quick Links</h5> 
+                <ul class="list-unstyled"> 
+                    <li><a href="#" class="text-white">Home</a></li> 
+                    <li><a href="#" class="text-white">Shop</a></li> 
+                    <li><a href="#" class="text-white">About Us</a></li> 
+                    <li><a href="#" class="text-white">Contact</a></li> 
+                </ul> 
+            </div> 
+            <div class="col-md-3"> 
+                <h5>Customer Service</h5> 
+                <ul class="list-unstyled"> 
+                    <li><a href="#" class="text-white">FAQs</a></li> 
+                    <li><a href="#" class="text-white">Shipping Info</a></li> 
+                    <li><a href="#" class="text-white">Returns</a></li> 
+                </ul> 
+            </div> 
+            <div class="col-md-3"> 
+                <h5>Contact Us</h5> 
+                <p>Email: support@jaycaps.com</p> 
+                <p>Phone: +123 456 7890</p> 
+                <p>Address: 123 Cap Lane, Hat City</p> 
+            </div> 
+            <div class="col-md-3"> 
+                <h5>Follow Us</h5> 
+                <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a> 
+                <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a> 
+                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a> 
+            </div> 
+        </div> 
+    </div> 
+    <div class="text-center mt-3"> 
+        <small>© 2024 JAYCAPS. All Rights Reserved.</small> 
+    </div> 
+</footer>
+<script src="script.js"></script> <!-- Link to the external JavaScript file -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
